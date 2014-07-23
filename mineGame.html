@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Main Game</title>
+		<link rel="icon" type="text/css" href="images/bomb.jpg">
+		<link rel="stylesheet" type="text/css" href="mineGame.css">
+		<script type="text/javascript" src="mineGame.js"></script>
+	</head>
+	<body onload="createSmallDiv ()">
+		<div class="bodyDiv">
+			<div class="gameDiv">
+				<div class="buttonDiv">
+					<div class="noOfBomeDiv" id="noOfBomeDiv">
+						
+					</div>
+					<div class="timerDiv" id="timerDiv">
+						0
+					</div>
+					<div class="smileDiv">
+						<img src="" class="thinkingImg" id="thinkingImg">
+					</div>
+					<div class="scoreDiv" id="scoreDiv">
+						Score
+					</div>
+					<select class="selectMenu" onchange="checkValues (this)">
+						<option value="0">Options</option>
+						<option value="newGame">New Game</option>
+						<option value="timerPlus30">+30 Seconds</option>
+						<option value="resetTimer">Reset Timer</option>
+					</select>
+				</div>
+				<div class="smallContainDiv" id="smallContainDiv">
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
